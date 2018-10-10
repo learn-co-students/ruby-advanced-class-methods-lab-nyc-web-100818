@@ -1,15 +1,14 @@
 class Song
+
   attr_accessor :name, :artist_name
+
   @@all = []
-
-
 
   def Song.create
     song = Song.new
     @@all << song
     song
   end
-
 
   def Song.new_by_name(name)
     song = Song.new
